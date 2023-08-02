@@ -17,7 +17,9 @@ const feedUrls = [
 	'https://www.anothergaze.com/feed/',
 	'https://decorrespondent.nl/feed/v1/profile/veramulder',
 	'https://decorrespondent.nl/feed/v1/profile/jessefrederik',
-	'https://decorrespondent.nl/feed/v1/profile/valentijndehingh'
+	'https://decorrespondent.nl/feed/v1/profile/valentijndehingh',
+	'https://www.youtube.com/feeds/videos.xml?channel_id=UCeTfBygNb1TahcNpZyELO8g',
+	'https://www.youtube.com/feeds/videos.xml?channel_id=UCKv_QzXft4mD6TXmQBZtzIA'
 ];
 
 export const load = (async () => {
