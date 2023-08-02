@@ -49,21 +49,32 @@
 		<li>
 			<a href={item.link}>{item.title}</a><br />
 			<small>
-				<a class="feed-website" href={item.feedWebsite}>{item.feedTitle}</a>
 				{#if item.date !== undefined}
-					&middot; {item.date.toDateString()}
+					{item.date.getDate().toString().padStart(2, '0')}-{item.date
+						.getMonth()
+						.toString()
+						.padStart(2, '0')}-{item.date.getFullYear()} &middot;
 				{/if}
+				<a class="feed-website" href={item.feedWebsite}>{item.feedTitle}</a>
 			</small>
 		</li>
 	{/each}
 </ol>
 
-<center>🐛 made by <a href="https://joeri.me">Joeri</a> 🐛</center>
+<footer>🐛 made by <a href="https://joeri.me">Joeri</a> 🐛</footer>
 
 <style>
+	h1 {
+		line-height: var(--baseline);
+		margin-bottom: var(--baseline);
+	}
 	ol {
 		list-style: none;
 		padding-left: 0;
+	}
+
+	li + li {
+		margin-top: var(--baseline);
 	}
 
 	small {
@@ -72,5 +83,10 @@
 
 	.feed-website {
 		color: inherit;
+	}
+
+	footer {
+		margin: var(--baseline);
+		text-align: center;
 	}
 </style>
