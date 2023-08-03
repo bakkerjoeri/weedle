@@ -19,9 +19,7 @@ const feedUrls = [
 	'https://decorrespondent.nl/feed/v1/profile/jessefrederik',
 	'https://decorrespondent.nl/feed/v1/profile/valentijndehingh',
 	'https://www.youtube.com/feeds/videos.xml?channel_id=UCeTfBygNb1TahcNpZyELO8g',
-	'https://www.youtube.com/feeds/videos.xml?channel_id=UCKv_QzXft4mD6TXmQBZtzIA',
-	'https://alistapart.com/about/rss-feed/',
-	'https://www.youtube.com/feeds/videos.xml?channel_id=UCqqJQ_cXSat0KIAVfIfKkVA'
+	'https://www.youtube.com/feeds/videos.xml?channel_id=UCKv_QzXft4mD6TXmQBZtzIA'
 ];
 
 export const load = (async () => {
