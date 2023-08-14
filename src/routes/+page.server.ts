@@ -20,7 +20,16 @@ const feedUrls = [
 	'https://decorrespondent.nl/feed/v1/profile/valentijndehingh',
 	'https://www.youtube.com/feeds/videos.xml?channel_id=UCeTfBygNb1TahcNpZyELO8g',
 	'https://www.youtube.com/feeds/videos.xml?channel_id=UCKv_QzXft4mD6TXmQBZtzIA',
-	'https://alistapart.com/main/feed'
+	'https://alistapart.com/main/feed',
+	'https://gabiabrao.substack.com/feed',
+	'https://www.youtube.com/feeds/videos.xml?channel_id=UC3azLjQuz9s5qk76KEXaTvA', // Tom 7
+	'https://www.youtube.com/feeds/videos.xml?channel_id=UC0EQqsoOczVV562Vh8kzcHg', // Interactive Fiction Technology Foundation
+	'https://www.youtube.com/feeds/videos.xml?channel_id=UCrIttXi0WgLXHI1poCk0D6g', // Jeremy Parish | Video Works
+	'https://www.youtube.com/feeds/videos.xml?channel_id=UCt7fwAhXDy3oNFTAzF2o8Pw', // theneedledrop
+	'https://lenabril.substack.com/feed',
+	'https://www.youtube.com/feeds/videos.xml?channel_id=UCZB6V9fUov0Mx_us3MWWILg', // People Make Games
+	'https://www.youtube.com/feeds/videos.xml?channel_id=UC5CYeHPLer3lbEhgonvbbAA', // Noah Caldwell-Gervais
+	'https://www.youtube.com/feeds/videos.xml?channel_id=UClt01z1wHHT7c5lKcU8pxRQ' // hbomberguy
 ];
 
 export const load = (async () => {
