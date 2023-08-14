@@ -11,11 +11,11 @@
 
 	export let data: PageServerData;
 
-	const allItems: FeedItem[] = data.feeds.reduce((allItems, feed) => {
+	$: allItems = data.feeds.reduce((allItems, feed) => {
 		const feedItems = feed.items.map((item) => {
 			return {
 				...item,
-				date: item.pubDate ? new Date(item.pubDate) : undefined,
+				date: item.pubDate ? new Date(item.pubDate) : item.isoDate ? new Date(item.isoDate) : undefined,
 				feedTitle: feed.title,
 				feedUrl: feed.feedUrl,
 				feedWebsite: feed.link
@@ -25,7 +25,7 @@
 		return [...allItems, ...feedItems];
 	}, [] as FeedItem[]);
 
-	allItems.sort((a, b) => {
+	$: sortedItems = [...allItems].sort((a, b) => {
 		if (a.date === undefined || b.date === undefined) {
 			return 0;
 		}
@@ -42,18 +42,20 @@
 	});
 </script>
 
-<svelte:head><title>Weedle</title></svelte:head>
+<svelte:head>
+	<title>Weedle</title>
+</svelte:head>
 
 <h1>Weedle</h1>
 
 <ol>
-	{#each allItems as item}
+	{#each sortedItems as item}
 		<li>
 			<a href={item.link}>{item.title}</a><br />
 			<small>
 				{#if item.date !== undefined}
-					{item.date.getDate().toString().padStart(2, '0')}-{item.date
-						.getMonth()
+					{item.date.getDate().toString().padStart(2, '0')}-{(item.date
+						.getMonth() + 1)
 						.toString()
 						.padStart(2, '0')}-{item.date.getFullYear()} &middot;
 				{/if}
