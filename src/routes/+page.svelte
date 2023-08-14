@@ -42,6 +42,8 @@
 	});
 </script>
 
+<svelte:head><title>Weedle</title></svelte:head>
+
 <h1>Weedle</h1>
 
 <ol>
