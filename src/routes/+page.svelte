@@ -57,7 +57,7 @@
 						.toString()
 						.padStart(2, '0')}-{item.date.getFullYear()} &middot;
 				{/if}
-				<a class="feed-website" href={item.feedWebsite}>{item.feedTitle}</a>
+				<a class="feed-website" href={item.feedWebsite} target="_blank" rel="noopener noreferrer">{item.feedTitle}</a>
 			</small>
 		</li>
 	{/each}
