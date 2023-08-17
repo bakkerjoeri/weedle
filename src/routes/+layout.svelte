@@ -1,8 +1,12 @@
+<script lang="ts">
+	import { page } from '$app/stores';
+</script>
+
 <svelte:head>
 	<title>Weedle</title>
 </svelte:head>
 
-<h1>Weedle</h1>
+<h1>{$page.data.title ? $page.data.title : 'Weedle'}</h1>
 
 <slot />
 

@@ -5,17 +5,20 @@
 	export let data: PageServerData;
 </script>
 
+{#if data.feed?.link}
+	<p class="feed-website">
+		<a href={data.feed.link} rel="noopener noreferrer">☞ Visit the website</a>
+	</p>
+{/if}
+
 <ol>
 	{#each data.items as item}
 		<li>
 			<a href={item.link} rel="noopener noreferrer" target="_blank">{item.title}</a><br />
 			<small>
 				{#if item.date !== undefined}
-					{format(item.date, 'yyyy-MM-dd')} &middot;
+					{format(item.date, 'yyyy-MM-dd')}
 				{/if}
-				<a class="feed-link" href={`/feeds/${item.feed.slug}`}>
-					{item.feed.title}
-				</a>
 			</small>
 		</li>
 	{/each}
@@ -35,7 +38,7 @@
 		opacity: 0.7;
 	}
 
-	.feed-link {
-		color: inherit;
+	.feed-website {
+		margin-bottom: var(--baseline);
 	}
 </style>
