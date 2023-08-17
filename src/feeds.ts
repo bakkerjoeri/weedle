@@ -28,7 +28,6 @@ export const feeds: FeedInput[] = [
 		url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCKv_QzXft4mD6TXmQBZtzIA',
 		slug: 'roguelike-celebration'
 	},
-	{ url: 'https://alistapart.com/main/feed', slug: 'alistapart' },
 	{ url: 'https://gabiabrao.substack.com/feed', slug: 'gabiabrao' },
 	{
 		url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UC3azLjQuz9s5qk76KEXaTvA',
