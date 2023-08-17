@@ -42,12 +42,6 @@
 	});
 </script>
 
-<svelte:head>
-	<title>Weedle</title>
-</svelte:head>
-
-<h1>Weedle</h1>
-
 <ol>
 	{#each sortedItems as item}
 		<li>
@@ -65,13 +59,8 @@
 	{/each}
 </ol>
 
-<footer>🐛 made by <a href="https://joeri.me">Joeri</a> 🐛</footer>
 
 <style>
-	h1 {
-		line-height: var(--baseline);
-		margin-bottom: var(--baseline);
-	}
 	ol {
 		list-style: none;
 		padding-left: 0;
@@ -87,10 +76,5 @@
 
 	.feed-website {
 		color: inherit;
-	}
-
-	footer {
-		margin: var(--baseline);
-		text-align: center;
 	}
 </style>
