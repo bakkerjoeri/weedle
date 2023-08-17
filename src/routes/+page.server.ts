@@ -29,7 +29,8 @@ const feedUrls = [
 	'https://lenabril.substack.com/feed',
 	'https://www.youtube.com/feeds/videos.xml?channel_id=UCZB6V9fUov0Mx_us3MWWILg', // People Make Games
 	'https://www.youtube.com/feeds/videos.xml?channel_id=UC5CYeHPLer3lbEhgonvbbAA', // Noah Caldwell-Gervais
-	'https://www.youtube.com/feeds/videos.xml?channel_id=UClt01z1wHHT7c5lKcU8pxRQ' // hbomberguy
+	'https://www.youtube.com/feeds/videos.xml?channel_id=UClt01z1wHHT7c5lKcU8pxRQ', // hbomberguy
+	'https://www.youtube.com/feeds/videos.xml?channel_id=UCqJ-Xo29CKyLTjn6z2XwYAw' // gmtk
 ];
 
 export const load = (async () => {
