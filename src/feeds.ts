@@ -59,7 +59,7 @@ export const feeds: FeedInput[] = [
 		slug: 'hbomberguy'
 	},
 	{
-		url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCqJ-Xo29CKyLTjn6z2XwYAw',
+		url: 'https://gmtk.substack.com/feed',
 		slug: 'gmtk'
 	}
 ];
