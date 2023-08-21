@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { format } from 'date-fns';
 </script>
 
 <svelte:head>
@@ -9,7 +10,7 @@
 <h1>{$page.data.title ? $page.data.title : 'Weedle'}</h1>
 
 <p class="updated-at">
-	{$page.data.updatedAt}
+	Edition of {format($page.data.updatedAt, 'HH:mm (z), EEEE d LLLL yyyy')}
 </p>
 
 <slot />
