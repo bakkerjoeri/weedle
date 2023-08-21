@@ -1,8 +1,5 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { formatInTimeZone } from 'date-fns-tz';
-
-	const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 </script>
 
 <svelte:head>
@@ -12,7 +9,7 @@
 <h1>{$page.data.title ? $page.data.title : 'Weedle'}</h1>
 
 <p class="updated-at">
-	Edition of {formatInTimeZone($page.data.updatedAt, timezone, 'HH:mm, EEEE d LLLL yyyy')}
+	{$page.data.updatedAt}
 </p>
 
 <slot />
