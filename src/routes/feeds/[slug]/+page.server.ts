@@ -20,5 +20,10 @@ export const load = (async ({ params }) => {
 	const items = await getItemsFromFeed(feed);
 	const sortedItems = sortFeedItemsByDate(items);
 
-	return { title: items[0].feed.title, feed: items[0].feed, items: sortedItems };
+	return {
+		title: items[0].feed.title,
+		feed: items[0].feed,
+		items: sortedItems,
+		updatedAt: new Date()
+	};
 }) satisfies PageServerLoad;

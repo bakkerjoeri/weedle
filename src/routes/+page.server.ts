@@ -11,5 +11,5 @@ export const load = (async () => {
 	const sortedItems = sortFeedItemsByDate(items);
 	const limitedItems = sortedItems.slice(0, LIMIT);
 
-	return { items: limitedItems };
+	return { items: limitedItems, updatedAt: new Date() };
 }) satisfies PageServerLoad;
