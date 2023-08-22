@@ -7,7 +7,7 @@
 
 {#if data.feed?.link}
 	<p class="feed-website">
-		<a href={data.feed.link} rel="noopener noreferrer">Go to {new URL(data.feed.link).host} ➹</a>
+		<a href={data.feed.link} rel="noopener noreferrer">Go to the {data.feed.title} website ➹</a>
 	</p>
 {/if}
 
