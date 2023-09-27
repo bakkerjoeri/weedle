@@ -61,5 +61,9 @@ export const feeds: FeedInput[] = [
 	{
 		url: 'https://gmtk.substack.com/feed',
 		slug: 'gmtk'
+	},
+	{
+		url: 'https://jvns.ca/atom.xml',
+		slug: 'Julia Evans'
 	}
 ];
