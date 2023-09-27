@@ -64,6 +64,6 @@ export const feeds: FeedInput[] = [
 	},
 	{
 		url: 'https://jvns.ca/atom.xml',
-		slug: 'Julia Evans'
+		slug: 'jvns'
 	}
 ];
