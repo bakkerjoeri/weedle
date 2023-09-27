@@ -65,5 +65,9 @@ export const feeds: FeedInput[] = [
 	{
 		url: 'https://jvns.ca/atom.xml',
 		slug: 'jvns'
+	},
+	{
+		url: 'https://letterboxd.com/journal/rss/',
+		slug: 'letterboxd'
 	}
 ];
