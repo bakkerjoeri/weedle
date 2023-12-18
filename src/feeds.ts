@@ -69,5 +69,13 @@ export const feeds: FeedInput[] = [
 	{
 		url: 'https://letterboxd.com/journal/rss/',
 		slug: 'letterboxd'
+	},
+	{
+		url: 'https://remapradio.com/rss/',
+		slug: 'remap-radio'
+	},
+	{
+		url: 'https://rue-morgue.com/feed/',
+		slug: 'rue-morgue'
 	}
 ];
