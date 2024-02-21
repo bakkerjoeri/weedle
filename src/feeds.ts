@@ -77,5 +77,13 @@ export const feeds: FeedInput[] = [
 	{
 		url: 'https://rue-morgue.com/feed/',
 		slug: 'rue-morgue'
+	},
+	{
+		url: 'https://wavelengths.online/posts_feed',
+		slug: 'wavelengths'
+	},
+	{
+		url: 'https://goodenough.us/feed.xml',
+		slug: 'goodenough'
 	}
 ];
