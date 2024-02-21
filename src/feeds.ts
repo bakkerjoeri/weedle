@@ -85,5 +85,9 @@ export const feeds: FeedInput[] = [
 	{
 		url: 'https://goodenough.us/feed.xml',
 		slug: 'goodenough'
+	},
+	{
+		url: 'https://www.davesnider.com/rss.xml',
+		slug: 'davesnider'
 	}
 ];
