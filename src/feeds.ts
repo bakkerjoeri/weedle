@@ -15,7 +15,7 @@ export const feeds: FeedInput[] = [
 	{ url: 'https://indiehellzone.com/feed/', slug: 'indiehellzone' },
 	{ url: 'https://100r.co/links/rss.xml', slug: '100r' },
 	{ url: 'https://mixedinitiatives.net/atom.xml', slug: 'mixedinitiatives' },
-	{ url: 'https://lwlies.com/feed/', slug: 'lwlies' },
+	{ url: 'https://lwlies.com/reviews/feed/', slug: 'lwlies-reviews' },
 	{ url: 'https://www.anothergaze.com/feed/', slug: 'anothergaze' },
 	{ url: 'https://decorrespondent.nl/feed/v1/profile/veramulder', slug: 'veramulder' },
 	{ url: 'https://decorrespondent.nl/feed/v1/profile/jessefrederik', slug: 'jessefrederik' },
@@ -38,14 +38,9 @@ export const feeds: FeedInput[] = [
 		slug: 'interactive-fiction-tech-foundation'
 	},
 	{
-		url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCrIttXi0WgLXHI1poCk0D6g',
-		slug: 'jeremy-parish-video-works'
-	},
-	{
 		url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCt7fwAhXDy3oNFTAzF2o8Pw',
 		slug: 'theneedledrop'
 	},
-	{ url: 'https://lenabril.substack.com/feed', slug: 'lenabril' },
 	{
 		url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCZB6V9fUov0Mx_us3MWWILg',
 		slug: 'people-make-games'
@@ -73,10 +68,6 @@ export const feeds: FeedInput[] = [
 	{
 		url: 'https://remapradio.com/rss/',
 		slug: 'remap-radio'
-	},
-	{
-		url: 'https://rue-morgue.com/feed/',
-		slug: 'rue-morgue'
 	},
 	{
 		url: 'https://wavelengths.online/posts_feed',
