@@ -80,5 +80,9 @@ export const feeds: FeedInput[] = [
 	{
 		url: 'https://www.davesnider.com/rss.xml',
 		slug: 'davesnider'
+	},
+	{
+		url: 'https://blog.puzzmo.com/index.xml',
+		slug: 'puzzmo-blog'
 	}
 ];
