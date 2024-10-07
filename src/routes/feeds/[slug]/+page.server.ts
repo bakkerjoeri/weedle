@@ -4,13 +4,13 @@ import { getItemsFromFeed, sortFeedItemsByDate } from '$lib/feeds';
 import { error } from '@sveltejs/kit';
 
 export const csr = false;
-export const prerender = true;
+export const prerender = false;
 
 export const entries: EntryGenerator = () => {
 	return feeds.map((feed) => ({ slug: feed.slug }));
 };
 
-export const load = (async ({ params }) => {
+export const load = (async ({ params, setHeaders }) => {
 	const feed = feeds.find((feed) => feed.slug === params.slug);
 
 	if (!feed) {
@@ -20,6 +20,9 @@ export const load = (async ({ params }) => {
 	const items = await getItemsFromFeed(feed);
 	const sortedItems = sortFeedItemsByDate(items);
 
+	setHeaders({
+		'cache-control': 'public, max-age=3600'
+	});
 	return {
 		title: items[0].feed.title,
 		feed: items[0].feed,

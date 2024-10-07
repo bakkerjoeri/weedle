@@ -10,7 +10,7 @@
 <h1>{$page.data.title ? $page.data.title : 'Weedle'}</h1>
 
 <p class="updated-at">
-	Edition of {format($page.data.updatedAt, 'HH:mm (z), EEEE d LLLL yyyy')}
+	Last updated {format($page.data.updatedAt, 'HH:mm (z), EEEE d LLLL yyyy')}
 </p>
 
 <slot />
