@@ -39,10 +39,6 @@ export const feeds: FeedInput[] = [
 		slug: 'interactive-fiction-tech-foundation'
 	},
 	{
-		url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCt7fwAhXDy3oNFTAzF2o8Pw',
-		slug: 'theneedledrop'
-	},
-	{
 		url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCZB6V9fUov0Mx_us3MWWILg',
 		slug: 'people-make-games'
 	},
