@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { PageServerData } from './$types';
-	import { format } from 'date-fns';
+	import { format, isValid } from 'date-fns';
 
 	export let data: PageServerData;
 </script>
@@ -16,7 +16,7 @@
 		<li>
 			<a href={item.link} rel="noopener noreferrer" target="_blank">{item.title}</a><br />
 			<small>
-				{#if item.date !== undefined}
+				{#if isValid(item.date) && item.date !== undefined}
 					{format(item.date, 'yyyy-MM-dd')}
 				{/if}
 			</small>
