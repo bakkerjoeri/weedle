@@ -71,8 +71,14 @@ export const feeds: FeedInput[] = [
 		slug: 'remap-radio'
 	},
 	{
-		url: 'https://wavelengths.online/posts_feed',
-		slug: 'wavelengths'
+		url: 'https://wavelengths.online/tag/Blog/feed',
+		slug: 'wavelengths-blog',
+		title: 'Wavelengts Blog'
+	},
+	{
+		url: 'https://wavelengths.online/tag/micro/feed',
+		slug: 'wavelengths-micro',
+		title: 'Wavelengts Micro'
 	},
 	{
 		url: 'https://goodenough.us/feed.xml',
