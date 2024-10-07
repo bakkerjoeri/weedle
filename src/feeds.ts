@@ -1,6 +1,7 @@
 export interface FeedInput {
 	url: string;
 	slug: string;
+	title?: string;
 }
 
 export const feeds: FeedInput[] = [

@@ -23,7 +23,7 @@ export async function getItemsFromFeed(feed: FeedInput): Promise<FeedItem[]> {
 				: undefined,
 			feed: {
 				slug: feed.slug,
-				title: feedOutput.title,
+				title: feed.title || feedOutput.title,
 				feedUrl: feedOutput.feedUrl,
 				link: feedOutput.link,
 				image: feedOutput.image,

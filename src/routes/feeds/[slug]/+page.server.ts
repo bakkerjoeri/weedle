@@ -23,8 +23,9 @@ export const load = (async ({ params, setHeaders }) => {
 	setHeaders({
 		'cache-control': 'public, max-age=3600'
 	});
+
 	return {
-		title: items[0].feed.title,
+		title: feed.title || items[0].feed.title,
 		feed: items[0].feed,
 		items: sortedItems,
 		updatedAt: new Date()
