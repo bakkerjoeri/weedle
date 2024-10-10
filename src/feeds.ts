@@ -87,5 +87,10 @@ export const feeds: FeedInput[] = [
 	{
 		url: 'https://blog.puzzmo.com/index.xml',
 		slug: 'puzzmo-blog'
+	},
+	{
+		url: 'https://www.marginalia.nu/log/index.xml',
+		slug: 'marginalia-blog',
+		title: 'Marginalia Weblog'
 	}
 ];
