@@ -92,5 +92,15 @@ export const feeds: FeedInput[] = [
 		url: 'https://www.marginalia.nu/log/index.xml',
 		slug: 'marginalia-blog',
 		title: 'Marginalia Weblog'
+	},
+	{
+		url: 'https://thathtml.blog/feed.xml',
+		slug: 'that-html-blog',
+		title: 'That <html> Blog'
+	},
+	{
+		url: 'https://www.spicyweb.dev/feed.xml',
+		slug: 'the-spicy-web-weblog',
+		title: 'The Spicy Web'
 	}
 ];
