@@ -102,5 +102,13 @@ export const feeds: FeedInput[] = [
 		url: 'https://www.spicyweb.dev/feed.xml',
 		slug: 'the-spicy-web-weblog',
 		title: 'The Spicy Web'
+	},
+	{
+		url: 'https://piccalil.li/articles.xml',
+		slug: 'piccalilli'
+	},
+	{
+		url: 'https://infrequently.org/feed/',
+		slug: 'infrequently-noted'
 	}
 ];
