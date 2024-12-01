@@ -110,5 +110,13 @@ export const feeds: FeedInput[] = [
 	{
 		url: 'https://infrequently.org/feed/',
 		slug: 'infrequently-noted'
+	},
+	{
+		url: 'https://muan.co/feed.xml',
+		slug: 'mu-an-chiou'
+	},
+	{
+		url: 'https://joshcollinsworth.com/blog',
+		slug: 'josh-collinsworth'
 	}
 ];
