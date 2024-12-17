@@ -69,7 +69,7 @@ export const feeds: FeedInput[] = [
 	{
 		url: 'https://wavelengths.online/tag/Blog/feed',
 		slug: 'wavelengths-blog',
-		title: 'Wavelengts Blog'
+		title: 'Wavelengths Blog'
 	},
 	{
 		url: 'https://wavelengths.online/tag/micro/feed',
