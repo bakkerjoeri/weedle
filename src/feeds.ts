@@ -118,5 +118,9 @@ export const feeds: FeedInput[] = [
 	{
 		url: 'https://joshcollinsworth.com/blog',
 		slug: 'josh-collinsworth'
-	}
+	},
+	{
+	    url: 'https://muffinlabs.com/atom.xml',
+	    slug: 'muffinlabs'
+	},
 ];
