@@ -1,6 +1,6 @@
 import type { EntryGenerator, PageServerLoad } from './$types';
 import { feeds } from '../../../feeds';
-import { getItemsFromFeed, sortFeedItemsByDate } from '$lib/feeds';
+import { getItemsFromFeed, sortFeedItemsByDate } from '$lib/utilities/feeds';
 import { error } from '@sveltejs/kit';
 
 export const csr = false;

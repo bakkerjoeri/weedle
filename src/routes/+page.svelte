@@ -8,12 +8,14 @@
 <ol>
 	{#each data.items as item}
 		<li>
-			<a href={item.link} rel="noopener noreferrer" target="_blank">{item.title}</a><br />
+			<a href={`/read/${item.link}`}>{item.title}</a><br />
 			<small>
 				{#if isValid(item.date) && item.date !== undefined}
 					{format(item.date, 'yyyy-MM-dd')} &middot;
 				{/if}
-				<a class="feed-link" href={`/feeds/${item.feed.slug}`}>
+				<a href={item.link} rel="noopener noreferrer" target="_blank">original</a>
+				&middot;
+				<a href={`/feeds/${item.feed.slug}`}>
 					{item.feed.title}
 				</a>
 			</small>
@@ -35,7 +37,7 @@
 		opacity: 0.7;
 	}
 
-	.feed-link {
+	small a {
 		color: inherit;
 	}
 </style>
