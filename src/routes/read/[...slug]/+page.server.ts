@@ -4,13 +4,17 @@ import { error } from '@sveltejs/kit';
 
 export const csr = false;
 
-export const load = (async ({ params }) => {
+export const load = (async ({ params, setHeaders }) => {
 	const pageUrl = params.slug;
 	const pageContent = await getPageContent(pageUrl);
 
 	if (pageContent === null || !pageContent.content) {
 		throw error(404, `No article data could be found for URL ${pageUrl}`);
 	}
+
+	setHeaders({
+		'cache-control': `public, max-age=${(60 * 60 * 24 * 30).toString()}`
+	});
 
 	return {
 		updatedAt: new Date(),
