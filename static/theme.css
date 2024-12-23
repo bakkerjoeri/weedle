@@ -1,5 +1,5 @@
 :root {
-	--font-size-body: 16px;
+	--font-size-body: 18px;
 	--baseline: calc(var(--font-size-body) * 1.5);
 	--font-size-small: 14px;
 	--font-size-heading: 21px;
