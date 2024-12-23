@@ -120,7 +120,8 @@ export const feeds: FeedInput[] = [
 		slug: 'josh-collinsworth'
 	},
 	{
-	    url: 'https://muffinlabs.com/atom.xml',
-	    slug: 'muffinlabs'
+	    url: 'https://triapul.cz/feed/english.xml',
+	    slug: 'automata'
 	},
+	
 ];
