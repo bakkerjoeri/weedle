@@ -1,6 +1,6 @@
 import type { PageServerLoad } from './$types';
 import { feeds as feedUrls } from './../feeds';
-import { getItemsFromFeed, sortFeedItemsByDate } from '$lib/feeds';
+import { getItemsFromFeed, sortFeedItemsByDate } from '$lib/utilities/feeds';
 
 export const csr = false;
 export const prerender = false;
