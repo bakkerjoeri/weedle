@@ -123,5 +123,9 @@ export const feeds: FeedInput[] = [
 	    url: 'https://triapul.cz/feed/english.xml',
 	    slug: 'automata'
 	},
-	
+	{
+		url: 'https://lea.verou.me/feed.xml',
+		slug: 'lea-verou',
+		title: 'Lea Verou'
+	}
 ];
