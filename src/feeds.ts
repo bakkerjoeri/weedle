@@ -132,5 +132,10 @@ export const feeds: FeedInput[] = [
 		url: 'https://82mhz.net/index.xml',
 		slug: '82mhz',
 		title: '82MHz'
+	},
+	{
+		url: 'https://analogoffice.net/feed.xml',
+		slug: 'analog-office',
+		title: 'Analog Office'
 	}
 ];
