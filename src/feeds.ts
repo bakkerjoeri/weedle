@@ -120,12 +120,17 @@ export const feeds: FeedInput[] = [
 		slug: 'josh-collinsworth'
 	},
 	{
-	    url: 'https://triapul.cz/feed/english.xml',
-	    slug: 'automata'
+		url: 'https://triapul.cz/feed/english.xml',
+		slug: 'automata'
 	},
 	{
 		url: 'https://lea.verou.me/feed.xml',
 		slug: 'lea-verou',
 		title: 'Lea Verou'
+	},
+	{
+		url: 'https://82mhz.net/index.xml',
+		slug: '82mhz',
+		title: '82MHz'
 	}
 ];
